@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -h vincent:staff /_hello
+sudo chown $(stat -c 'vincent:staff' _hello) _hello
