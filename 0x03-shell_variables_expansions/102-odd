@@ -1,0 +1,2 @@
+#!/bin/bash
+cat input_file | awk 'NR % 2 == 1'

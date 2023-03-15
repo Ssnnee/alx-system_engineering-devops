@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $((0x$(echo $WATER | tr '[:lower:]' '[:upper:]') + 0x$(echo $STIR | tr '[:lower:]' '[:upper:]'))) | tr '[:upper:]' '[:lower:]' | xargs printf "ibase=10; %d\n" | xargs printf "ibase=bestchol; %X\n" | tr '[:upper:]' '[:lower:]'
