@@ -1,5 +1,16 @@
-#!/bin/bash
-Welcome to the Shell Basics repository!
+# Alx System Engineering Devops
+This repository contains the Python projects done during my software engineering training at ALX.
 
-This repository is designed to help you learn and understand the fundamentals of shell scripting. Whether you're a beginner or an experienced developer, the resources contained here will provide you with a solid foundation in shell scripting and help you improve your skills.
+##  Description 
+The repository includes several projects that illustrate system engineering devops. The project mostly contains a buch of shell script. And most o it pass the Shellcheck.
 
+## Project Structure
+Each project is contained in its own directory, with a descriptive name indicating the concepts covered by the programs therein. 
+
+## Installation and Usage
+
+To use the bash script contains in this repo just have to run it since thy are all executable:
+
+```
+./sript_name
+```
