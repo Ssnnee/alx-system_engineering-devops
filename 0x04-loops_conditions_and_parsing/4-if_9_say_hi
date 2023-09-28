@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This display Best School 10 times but add Hi in a new line on the 9th iteration 
+
+n=0
+
+while [ $n -lt 10 ]
+do
+  if [ $n -eq 8 ]
+  then
+    echo "Best School"
+    echo "Hi"
+  else
+    echo "Best School"
+  fi
+  n=$((n+1))
+done
