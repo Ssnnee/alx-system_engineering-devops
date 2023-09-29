@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script that does not end by using kill process. 
+
+trap "echo 'I am invincible!!!'" SIGTERM
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
