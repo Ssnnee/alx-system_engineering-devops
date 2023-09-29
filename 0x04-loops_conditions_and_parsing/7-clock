@@ -5,11 +5,11 @@ h=0
 
 while [ $h -le 12 ]
 do
-printf "Hour: %d\n" $h
+echo "Hour: $h"
   min=1
   while [ $min -le 59 ]
   do
-    printf "%d\n" $min
+    echo "$min"
     min=$((min+1))
   done
   h=$((h+1))
