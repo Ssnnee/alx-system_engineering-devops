@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script displays the current dir's content in a list format
+
+for file in *; do
+  if [ -f "$file" ] && [[ "$file" != .* ]]; then
+    name_dash=$(echo "$file" | cut -d '-' -f 2-)
+    echo "$name_dash"
+  fi
+done
