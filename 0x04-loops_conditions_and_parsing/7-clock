@@ -1,23 +1,16 @@
 #!/usr/bin/env bash
-# This script displays numbers from 1 to 20 and displays some text
+# This script displays the time for 12 hours and 59 minutes
 
-n=1
+h=0
 
-while [ $n -le 20 ]
+while [ $h -le 12 ]
 do
-  case $n in
-    4)
-      echo "bad luck from China"
-      ;;
-    9)
-      echo "bad luck from Japan"
-      ;;
-    17)
-      echo "bad luck from Italy"
-      ;;
-    *)
-      echo $n
-      ;;
-  esac
-  n=$((n+1))
+printf "Hour: %d\n" $h
+  min=1
+  while [ $min -le 59 ]
+  do
+    printf "%d\n" $min
+    min=$((min+1))
+  done
+  h=$((h+1))
 done
