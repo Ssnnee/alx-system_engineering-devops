@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script stops the 7 machin truc
+
+pkill -f -9 'bash.*7-highlander'
