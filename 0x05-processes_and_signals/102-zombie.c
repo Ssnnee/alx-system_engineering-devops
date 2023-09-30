@@ -4,7 +4,8 @@
 
 /**
  * infinite_while - Create an infinite loop with a 1-second sleep.
- *
+To https://github.com/Ssnnee/alx-system_engineering-devops.git
+   1b073f7..4ec5950  master -> master
  * Return: Always returns 0.
  */
 int infinite_while(void)
