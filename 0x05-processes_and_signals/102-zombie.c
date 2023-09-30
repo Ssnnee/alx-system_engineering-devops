@@ -4,7 +4,7 @@
 
 /**
  * infinite_while - Create an infinite loop with a 1-second sleep.
- * 
+ *
  * Return: Always returns 0.
  */
 int infinite_while(void)
