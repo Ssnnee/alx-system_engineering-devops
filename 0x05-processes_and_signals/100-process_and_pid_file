@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script do a bunch of things
+
+touch /var/run/myscript.pid
+
+sigterm_signal () {
+	echo "I hate the kill command"
+	rm -f /var/run/myscript.pid
+	exit 0	
+}
+trap "sigterm_signal" SIGTERM SIGQUIT
+trap "echo 'Y U no love me?!'"  SIGINT
+
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
