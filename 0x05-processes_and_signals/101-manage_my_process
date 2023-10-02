@@ -5,26 +5,27 @@ SCRIPT_PATH="/alx-system_engineering-devops/0x05-processes_and_signals/manage_my
 FILE="/var/run/my_process.pid"
 
 start_process() {
-	"$SCRIPT_PATH" &
+	"./$SCRIPT_PATH" &
 	echo $! > "$FILE"
 	echo "manage_my_process started"
 }
 
 stop_process() {
+	kill "$(pgrep -f manage_my_process)"
 	kill "$(cat "$FILE")"
 	rm -f "$FILE"
 	echo "manage_my_process stopped"
 }
 
 restart_process() {
-    if [ -f "$FILE" ]; then
-        kill "$(cat "$FILE")"
-        rm -f "$FILE"
-    fi
+	if [ -f "$FILE" ]; then
+		kill "$(cat "$FILE")"
+		rm -f "$FILE"
+	fi
 
-    "$SCRIPT_PATH" &
-    echo $! > "$FILE"
-    echo "manage_my_process restarted"
+	"$SCRIPT_PATH" &
+	echo $! > "$FILE"
+	echo "manage_my_process restarted"
 }
 case "$1" in
 	start)
