@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# This script Indefinitely writes I am alive! to the file /tmp/my_process in 2sec
+
+SCRIPT_PATH="/alx-system_engineering-devops/0x05-processes_and_signals/manage_my_process"
+FILE="/var/run/my_process.pid"
+
+start_process() {
+	"$SCRIPT_PATH" &
+	echo $! > "$FILE"
+	echo "manage_my_process started"
+}
+
+stop_process() {
+	kill "$(cat "$FILE")"
+	rm -f "$FILE"
+	echo "manage_my_process stopped"
+}
+
+restart_process() {
+    if [ -f "$FILE" ]; then
+        kill $(cat "$FILE")
+        rm -f "$FILE"
+    fi
+
+    "$SCRIPT_PATH" &
+    echo $! > "$FILE"
+    echo "manage_my_process restarted"
+}
+case "$1" in
+	start)
+		start_process
+		;;
+	stop)
+		stop_process
+		;;
+	restart)
+		restart_process
+		;;
+	*)
+		echo "Usage: manage_my_process {start|stop|restart}"
+		exit 1
+		;;
+esac
+
+exit 0
