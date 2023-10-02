@@ -18,7 +18,7 @@ stop_process() {
 
 restart_process() {
     if [ -f "$FILE" ]; then
-        kill $(cat "$FILE")
+        kill "$(cat "$FILE")"
         rm -f "$FILE"
     fi
 
