@@ -1,5 +1,5 @@
 # Alx System Engineering Devops
-This repository contains the Python projects done during my software engineering training at ALX.
+This repository contains the projects done during my software engineering training at ALX. It's about commands and all that kind of stuff. 
 
 ##  Description 
 The repository includes several projects that illustrate system engineering devops. The project mostly contains a buch of shell script. And most o it pass the Shellcheck.
