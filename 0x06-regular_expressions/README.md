@@ -24,3 +24,6 @@ const email2 = "invalid-email";
 console.log(emailRegex.test(email1)); // true
 console.log(emailRegex.test(email2)); // false
 ```
+
+Here we can learn basics of regex : [RegexOne](https://regexone.com/)
+
