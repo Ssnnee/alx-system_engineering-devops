@@ -8,7 +8,7 @@ end
 
 input = ARGV[0]
 
-regex = /\d{10}/
+regex = /^\d{10}$/
 matches = input.scan(regex)
 
 
