@@ -8,7 +8,7 @@ end
 
 input = ARGV[0]
 
-regex = /hbn|hbtn|hbttn|hbtttn|hbttttn(?!n)/
+regex = /\b(?!hbon)\w+\b/
 matches = input.scan(regex)
 
 
