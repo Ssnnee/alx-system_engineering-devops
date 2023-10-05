@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays listening ports
+
+if ! dpkg -l | grep -q net-tools; then
+    apt-get install -y net-tools > /dev/null
+fi
+
+netstat -tulnp
