@@ -19,6 +19,7 @@ The directory structure is as follows:
 + ├── 0x07-networking_basics
 + ├── 0x08-networking_basics_2
 + ├── 0x09-web_infrastructure_design
++ ├── 0x0B-ssh
 ## Installation and Usage
 
 To use the bash script contains in this repo just have to run it since thy are all executable:
