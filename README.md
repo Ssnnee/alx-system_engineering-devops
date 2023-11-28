@@ -8,7 +8,6 @@ The repository includes several projects that illustrate system engineering devo
 Each project is contained in its own directory, with a descriptive name indicating the concepts covered by the programs therein.
 
 The directory structure is as follows:
-```
 .
 ├── 0x00-shell_basics
 ├── 0x01-shell_permissions
@@ -22,7 +21,6 @@ The directory structure is as follows:
 ├── 0x09-web_infrastructure_design
 ├── 0x0A-configuration_management
 ├── 0x0B-ssh
-```
 ## Installation and Usage
 
 To use the bash script contains in this repo just have to run it since thy are all executable:
