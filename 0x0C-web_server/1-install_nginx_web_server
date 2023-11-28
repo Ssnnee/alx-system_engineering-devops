@@ -1,4 +1,5 @@
 #/usr/bin/env bash
+# install nginx and make the default page to say Hello World!
 
 apt-get -y install nginx > /dev/null
 ufw allow 'Nginx HTTP' > /dev/null 2>&1
