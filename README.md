@@ -21,6 +21,7 @@ The directory structure is as follows:
 ├── 0x09-web_infrastructure_design
 ├── 0x0A-configuration_management
 ├── 0x0B-ssh
+├── 0x0C-web_server
 ## Installation and Usage
 
 To use the bash script contains in this repo just have to run it since thy are all executable:
