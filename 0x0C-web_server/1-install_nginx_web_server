@@ -1,6 +1,5 @@
 #/usr/bin/env bash
 
-apt-get -y install nginx > install.log
-rm -rf install.log
+apt-get -y install nginx > /dev/null
 ufw allow 'Nginx HTTP' > /dev/null 2>&1
 echo "Hello World!" | tee /var/www/html/index.nginx-debian.html > /dev/null
