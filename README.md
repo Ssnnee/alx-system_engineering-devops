@@ -23,6 +23,8 @@ The directory structure is as follows:
 ├── 0x0A-configuration_management
 ├── 0x0B-ssh
 ├── 0x0C-web_server
+├── 0x0F-load_balancer
+└── README.md
 ```
 ## Installation and Usage
 
