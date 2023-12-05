@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# install nginx and make the default page to say Hello World! and set rediction
+
+apt-get -y install nginx > /dev/null
+ufw allow 'Nginx HTTP' > /dev/null 2>&1
+echo "Hello World!" | tee /var/www/html/index.nginx-debian.html > /dev/null
+redirect_me="location /redirect_me {\nreturn 301 https://github.com/Ssnnee;\n}\nlocation / {"
+sed -i "s|location /{|$redirect_me|" /etc/nginx/sites-available/default
