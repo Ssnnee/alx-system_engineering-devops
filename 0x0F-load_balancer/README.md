@@ -15,5 +15,7 @@ Fastest
 Least Connections
 
 **Useful commands**
+```shell
 nginx -t
 haproxy -f /etc/haproxy/haproxy.cfg -c
+```
