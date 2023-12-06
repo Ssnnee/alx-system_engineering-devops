@@ -2,6 +2,7 @@
 # Configure a new ubuntu server to respond with a custom HTTP header
 # # As to be run as root
 
+apt-get update > /dev/null
 apt-get -y install nginx > /dev/null
 ufw allow 'Nginx HTTP' > /dev/null 2>&1
 
@@ -69,6 +70,6 @@ echo "server {
        root /var/www/html;
        index index.html index.htm index.nginx-debian.html;
    }
-}" | tee /etc/nginx/sites-available/default
+}" | tee /etc/nginx/sites-available/default > /dev/null
 
 systemctl restart nginx
