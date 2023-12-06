@@ -14,4 +14,6 @@ Dynamic Round Robin
 Fastest
 Least Connections
 
-## Usage
+**Useful commands**
+nginx -t
+haproxy -f /etc/haproxy/haproxy.cfg -c
