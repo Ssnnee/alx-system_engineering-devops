@@ -25,6 +25,7 @@ The directory structure is as follows:
 ├── 0x0C-web_server
 ├── 0x0F-load_balancer
 ├── 0x0E-web_stack_debugging_1
+├── 0x10-https_ssl
 └── README.md
 ```
 ## Installation and Usage

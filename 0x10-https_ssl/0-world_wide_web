@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Display information about subdomains.
+
+subdomain_list=("www" "lb-01" "web-01" "web-02")
+
+for subdomain in "${subdomain_list[@]}"; do
+  if [ "$#" -eq 1 ]; then
+    line=$(dig "$subdomain.$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    echo "$subdomain $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+  elif [ "$#" -eq 2 ] && [ "$subdomain" == "$2" ]; then
+    line=$(dig "$subdomain.$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
+    echo "$subdomain $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+  fi
+done
