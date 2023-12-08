@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Do the same as 0-nginx_likes_port_80 in shorter way and kill nginx
+
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+pkill nginx
