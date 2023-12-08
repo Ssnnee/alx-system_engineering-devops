@@ -1,0 +1,9 @@
+#!/bin/env bash
+# Script that configures Nginx server so that it run and listen on port 80
+
+
+apt-get -y install nginx > /dev/null
+ufw allow 'Nginx HTTP' > /dev/null 2>&1
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
