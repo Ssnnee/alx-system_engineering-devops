@@ -6,7 +6,9 @@ and outgoing network traffic based on predetermined security rules.
 In this project, we will try to install and setup ufw firewall one off the server
 provided by ALX.
 Ufw, or Uncomplicated Firewall, is a simplified firewall management
-interface that hides the complexity of lower-level packet filtering technologies.
+interface that hides the complexity of lower-level packet filtering technologies
+and it's by default install on Ubuntu server. But if it's not for whatever reason,
+just `sudo apt install ufw`.
 WE configure ufw so that it blocks all incoming traffic, except the following TCP ports:
 + 22 (SSH)
 + 443 (HTTPS SSL)
