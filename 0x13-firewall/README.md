@@ -18,6 +18,7 @@ WE configure ufw so that it blocks all incoming traffic, except the following TC
 | Project directory or file name | Description |
 |------------------------|-------------|
 | 0-block_all_incoming_traffic_but | is the commands I used to set up the firewall |
+| 100-port_forwarding | copy of the ufw configuration file that I modified to forward request on port 8080 to 80 |
 | README.md | the root README file off the projects |
 
 
