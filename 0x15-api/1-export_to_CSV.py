@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module uses the JSONPlaceholder API to get information"""
-import requests
 import csv
+import requests
 import sys
 
 
