@@ -29,7 +29,7 @@ def get_employee_name_and_todo_progress(id):
               .format(employee_name, done_tasks, tasks))
         for todo in todos:
             if todo["completed"]:
-                print(f"\t{todo['title']}")
+                print(f"\t {todo['title']}")
 
     except requests.exceptions.RequestException as e:
         print(f"Oops error: {e}")
