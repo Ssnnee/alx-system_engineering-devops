@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """This module contains a recursive function that queries the Reddit API """
-import requests
 import json
+import requests
 
 
 def recurse(subreddit, hot_list=[], after=""):
