@@ -14,6 +14,9 @@ def number_of_subscribers(subreddit):
     if res.status_code != 200:
         return 0
 
+    if res.status_code == 302:
+        return 0
+
     data = json.loads(res.text)
 
     if data is None:
