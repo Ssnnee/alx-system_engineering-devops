@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """This module contains a function that queries the Reddit API """
+import json
 import requests
 
 
@@ -8,13 +9,10 @@ def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     headers = {"User-Agent": "Mozilla/5.0"}
 
-    try:
-        res = requests.get(url, headers=headers, allow_redirects=False)
-        res.raise_for_status()
+    res = requests.get(url, headers=headers, allow_redirects=False)
 
-        nbr_subs = res.json().get("data").get("subscribers")
-        return nbr_subs
-
-    except requests.exceptions.RequestException:
-        print("Oops error occured")
+    if res.status_code != 200:
         return 0
+
+    nbr_subs = json.loads(res.text).get("data").get("subscribers")
+    return nbr_subs
