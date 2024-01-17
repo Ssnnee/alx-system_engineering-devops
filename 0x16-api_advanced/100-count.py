@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """This module contains a function that queries the Reddit API """
-import requests
-import json
 from collections import Counter
+import json
+import requests
 
 
 def count_words(subreddit, word_list, after=None):
