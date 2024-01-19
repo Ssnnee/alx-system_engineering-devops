@@ -1,4 +1,8 @@
-#!/bin/bash
+# 0x00. Shell, basics
+In this project, we learn bash scripting and wrote some script that does some
+stuff
+
+## File description
 0-current_working_directory prints the absolute path name of the current working directory.
 1-listit Display the contents list of your current directory.
 2-bring_me_home changes the working directory to the user’s home directory.
@@ -14,5 +18,4 @@
 12-file_type a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
 13-symbolic_link Create a symbolic link to /bin/ls, named __ls__. The symbolic link should be created in the current working directory.
 14-copy_html a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
-
 
