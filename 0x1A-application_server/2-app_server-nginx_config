@@ -1,0 +1,12 @@
+server {
+    listen 80 ;
+
+    server_name samuelnandi.tech/airbnb-onepage/ www.samuelnandi.tech/airbnb-onepage/;
+
+    location /airbnb-onepage/ {
+        include proxy_params;
+        proxy_pass http://localhost:5000;
+        proxy_redirect off;
+    }
+
+}
